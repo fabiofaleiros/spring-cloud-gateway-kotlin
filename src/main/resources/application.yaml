@@ -1,8 +1,11 @@
 spring:
+  application:
+    name: spring-cloud-gateway-kotlin
+
   cloud:
     gateway:
       routes:
         - id: hello-world
-          uri: https://httpbin.org/
+          uri: https://httpbin.org
           predicates:
             - Path=/get
